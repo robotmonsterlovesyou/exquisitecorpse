@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>Exquisite Corpse</title>
+<link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+<link href="apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+</head>
+
+<body>
+
+<header>
+
+    <h1><a href="#">Exquisite Corpse</a></h1>
+
+    <p class="tagline">A game of creative imagination and pure artistic talent where anything can happen!</p>
+
+</header>
+
+<div class="game">
+
+    <div class="turn">
+
+        <div class="text hidden">
+
+            <p><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" class="reference hidden" /></p>
+
+            <input type="text" name="text" id="text" placeholder="" />
+
+        </div>
+
+        <div class="image">
+
+            <p class="reference"></p>
+
+            <canvas width="1400" height="700"></canvas>
+
+        </div>
+
+        <button class="continue">Continue &rsaquo;</button>
+
+        <p class="tools"><a href="#preview">Preview Game</a> &mdash; <a href="#reset">Reset Game</a></p>
+
+    </div>
+
+</div>
+
+<div class="preview hidden"></div>
+
+<div class="help hidden">
+
+    <h2>How To Play</h2>
+
+    <p>This version of Exquisite Corpse is played on a single device.</p>
+
+    <p>The first player writes a sentence packed with creative imagination. They then pass the device off to the next player who draws a picture based on the sentence written by the previous player. This player then passed of the device to yet another person who describes what they see in the picture drawn by the previous player.</p>
+
+    <p>This continues until all people in the vicinity of the device have taken a turn or interest in continuing has died down. Once this happens you can preview all of the turns in a linear format.</p>
+
+</div>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
