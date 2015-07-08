@@ -33,6 +33,7 @@ canvas {
     height: auto;
     display: block;
     background: #fff;
+    -ms-touch-action: none;
 }
 
 header {

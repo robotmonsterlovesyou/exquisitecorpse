@@ -130,11 +130,26 @@
 
         e.preventDefault();
 
+        if (e.originalEvent) {
+
+            e = e.originalEvent;
+
+        }
+
+        if (e.touches) {
+
+            e = e.touches[0];
+
+        }
+
         context.lineWidth = 4;
         context.lineCap = 'round';
         context.strokeStyle = '#222222';
 
-        context.lineTo(e.layerX * scale_ratio, e.layerY * scale_ratio);
+        context.lineTo(
+            (e.pageX - context.canvas.offsetLeft) * scale_ratio,
+            (e.pageY - context.canvas.offsetTop) * scale_ratio
+        );
         context.stroke();
 
     }
